@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora sencilla</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main class="calculadora">
+    <h1>Calculadora</h1>
+
+    <form id="formulario">
+      <label for="numero1">Primer número:</label>
+      <input id="numero1" type="number" min="0" step="1" required>
+
+      <p>Elige una operación:</p>
+      <div class="operaciones">
+        <button class="operador seleccionado" type="button" data-operacion="+">+</button>
+        <button class="operador" type="button" data-operacion="-">-</button>
+        <button class="operador" type="button" data-operacion="*">*</button>
+        <button class="operador" type="button" data-operacion="/">/</button>
+      </div>
+
+      <label for="numero2">Segundo número:</label>
+      <input id="numero2" type="number" min="0" step="1" required>
+
+      <div class="botones">
+        <button type="submit">Calcular</button>
+        <button type="reset">Limpiar</button>
+      </div>
+    </form>
+
+    <p id="resultado">Resultado: </p>
+  </main>
+</body>
+</html>
